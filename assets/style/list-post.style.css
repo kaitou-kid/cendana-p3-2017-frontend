@@ -1,0 +1,156 @@
+/* CSS file untuk file list-post */
+*{
+	margin: 0 auto;
+	padding: 0;
+}
+
+body, html{
+	height: 100%;
+}
+
+body{
+	background-color: #E5E5E5;
+}
+
+/* Wrapping */
+
+header{
+	margin: 0 auto;
+	padding: 20px;
+}
+
+content{
+	margin: 0 auto;
+	width: 80%;
+}
+
+.box-menu{
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+
+.box-item{
+	margin: 20px;
+	padding: 0;
+	float: left;
+}
+
+.main-content{
+	margin: 0;
+	padding: 0;
+	clear: both;
+}
+
+.head-content{
+	margin-top: 20px;
+	margin-left: 20px;
+	width: 90%;
+	height: 30px;
+	background-color: #AFAFAF;
+	box-shadow: rgba(0, 0, 0, 0.9) 1px -1px 1px;
+}
+
+.list-content{
+	margin: 0 20px;
+	width: 90%;
+	height: 30px;
+	background-color: #FFF;
+	box-shadow: rgba(0, 0, 0, 0.9) 1px 0 1px;
+
+}
+
+.content-item{
+	margin: 0;
+	width: 20%;
+	padding: 5px;
+	float: left;
+}
+
+.page{
+	margin: 10px 40px;
+	padding: 0;
+	float: right;
+}
+
+/* Formatting */
+
+.title-header img{
+	height: 45px;
+	width: 40px;
+	float: left;
+}
+
+.title-header h1{
+	margin: 0;
+	padding: 0;
+	float: left
+}
+
+.box-item select{
+	height: 25px;
+	width: 145px;
+}
+
+.box-item button{
+	width: 45px;	
+	height: 25px;
+}
+
+.box-item a{
+	text-decoration: none;
+	color: #2F2F2F;
+}
+
+.box-item a:hover{
+	color: #2940FF;
+}
+
+.content-item img{
+	height: 15px;
+	width: 15px; 
+}
+
+.content-item a{
+	text-decoration: none;
+	color: #000;
+}
+
+.content-item a:hover{
+	text-decoration: none;
+	color: #0054FF;
+}
+
+.main-content table{
+	background-color: #FFF;
+	border: 1px solid #4E4E4E;
+	border-collapse: collapse;
+}
+
+.main-content table > thead, .main-content table tfoot {
+	border-bottom: 3px solid #000;
+	background-color: #475DFF;
+}
+
+
+.main-content table tr 	td{
+	padding:10px 0;
+	text-align: center;
+}
+
+.main-content table img{
+	height: 20px;
+	width: 20px;
+}
+
+.active{
+	color: #2940FF;
+}
+
+.short{
+	width: 20px;
+}
+
+.long{
+	width: 25%;
+}
