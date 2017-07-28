@@ -5,3 +5,5 @@
 - detail-article.html
 - new-post.html
 - list-post.html
+## responsive page
+- new-post.html
