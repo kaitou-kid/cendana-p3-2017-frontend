@@ -1,0 +1,39 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body, html{
+	height: 100%;
+}
+
+body{
+	background-color: #FAF8F8;
+}
+
+.wrapper{
+	margin: 0 auto;
+	padding: 0;
+}
+
+header{
+	margin: 0;
+	padding: 5px 10px;
+	width: 100%;
+	min-height: 20%;
+	background-color: #FF5353;
+	overflow: auto;
+}
+
+.main-content{
+	margin: 10px auto;
+	width: 75%;
+	background-color: #FFFFFF;
+	box-shadow: rgba(0, 0, 0, 0.8) 1px 	2px 3px;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+}
+
