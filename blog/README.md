@@ -7,3 +7,5 @@
 - list-post.html
 ## responsive page
 - new-post.html
+- list-article.html
+- detail-article.html
