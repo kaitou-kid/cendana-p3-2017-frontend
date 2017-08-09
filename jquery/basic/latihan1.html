@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Latihan 1 Jquery</title>
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	<script type="text/javascript" src="./assets/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		
+		$(document).ready(function(){
+			console.log("Hallo World");
+			$("#title").html("Jqery");
+
+			$("#title").css("color","#DDD");
+			$("#title").css("text-shadow","rgba(0,0,0, 0.9) 1px 1px 5px");
+
+			$(".paragraph").html(
+				"Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+			);
+			// var path = '/assets/img/nella6.jpg';
+			// console.log(path);
+			$("img").attr("src",'assets/img/nella6.jpg');
+			$("img").css("width","150px");
+			$("img").css("height","150px");
+			$("img").css("margin","10px");
+
+		});
+
+	</script>
+</head>
+<body>
+	<div class="wrapper">
+		<header>
+			<h1 id="title"></h1>
+		</header>
+		<content>
+			<div class="main-content">
+				<img src="">
+				<p class="paragraph">	
+				</p>
+			</div>
+		</content>
+	</div>
+</body>
+</html>
