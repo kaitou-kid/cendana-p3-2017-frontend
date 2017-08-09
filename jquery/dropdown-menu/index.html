@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Drop Down Menu</title>
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+	<script type="text/javascript" src="assets/js/jquery-3.2.1.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(e){
+			// console.log("Hallo");
+			$('.nav-menu ul').hide();
+			$('.nav-menu li').hover(function(){
+				// $(this).find("ul").slideToggle(100);
+				$(this).children('ul').slideToggle(100);
+			});
+
+			/*$('.nav-menu ul ul li').hover(function(){
+				$(this).slideToggle(100);
+			});*/
+		});
+	</script>
+</head>
+<body>
+<div class="wrapper">
+	<header>
+		<img src="assets/img/jquery.svg"> 
+		<h1 class="title">Drop-Down Menu Jquery</h1>
+
+		<!-- menu dropdown -->
+		<ul class="nav-menu">
+			<li><a href="#">Home</a></li>
+			<li><a href="#" class="down">Profile</a>
+				<ul class="drop-down">
+					<li><a href="#">Sub-Link 1</a></li>
+					<li>
+						<a href="#">Sub-Link 2</a>
+					</li>
+					<li>
+						<a href="#">Sub-Link 3</a>
+						<ul>
+							<li><a href="#">Sub-menu-link-1</a></li>
+							<li><a href="#">Sub-menu-link-2</a></li>
+							<li><a href="#">Sub-menu-link-3</a></li>
+						</ul>
+					</li>
+				</ul>
+			</li>
+			<li><a href="#" class="down">Product</a>
+				<ul class="drop-down">
+					<li><a href="#">Sub-Link 1</a></li>
+					<li><a href="#">Sub-Link 2</a></li>
+					<li><a href="#">Sub-Link 3</a></li>
+				</ul>
+			</li>
+			<li><a href="#">About</a></li>
+		</ul>
+	</header>
+</div>
+</body>
+</html>
