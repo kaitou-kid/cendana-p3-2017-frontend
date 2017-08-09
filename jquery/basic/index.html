@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<!-- include jquery secara lokal / offline -->
+	<!-- <script src="./assets/js/jquery-3.2.1.min.js"></script> -->
+
+	<!-- include jquery secara online -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<style type="text/css">
+		.judul{font-size: 30px}
+		.red{color:red;}
+		.green{color:green;}
+		.yellow{color:yellow;}
+	</style>
+</head>
+<body>
+	<h1 class="judul">Ini Judul</h1>
+	<h3 class="sub_judul"></h3>
+	<p></p>
+	<button id="red">Mereh</button>
+	<button id="green">hijau</button>
+	<button id="yellow">kuning</button>
+	<script type="text/javascript">
+		// digunakan untuk menampilkan kedalam console
+		// console.log("Ini hanya bisa dilihat pada console");
+
+		// menampilkan pop up alert 
+		// alert("Ini Pesan");
+
+		// menampikan prompt isian
+		// prompt("Ini prompt");
+
+		// menampilkan pilihan 
+		// confirm("Ini pilihan");
+
+		// DOM Javascript
+		// Document Object Model
+		// document.getElementById("judul").innerHTML = "Halo Cendana";
+		// document.getElementsByClassName("sub_judul")[0].innerHTML = "Ini Sub Judul";
+		// document.getElementsByTagName("p")[0].innerHTML = "lorem ipsum";
+
+		// menggunakan jquery
+		// struktur penulisan jquery biasanya ditulis 
+		// di dalam function document ready
+		// strukturnya sebagai berikut
+		$(document).ready(function(){
+
+			// $("#judul").html("Halo Jquery");
+			$("button").click(function(){
+				var id = $(this).attr("id");
+
+				$("h1").removeClass();
+				$('h1').addClass("judul");
+				$('h1').addClass(id);
+			});
+		});
+	</script>
+</body>
+</html>
