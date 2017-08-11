@@ -1,0 +1,194 @@
+/* Style template halaman login */
+
+*{
+	margin: 0;
+	padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6{
+	margin: 0;
+	padding: 0;
+}
+
+html, body{
+	margin: 0 auto;
+	padding: 0;
+	height: 100%;
+}
+
+body{
+	background: url('../img/city-building.jpg') fixed no-repeat;
+	/* background-color: #329BFF; */
+	background-size: cover;
+}
+
+.wrapper{
+	margin: 0 auto;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.6);
+	left: 0;
+	top: 0;
+	position: absolute;
+	display: block;
+}
+
+.login-wrapper{
+	margin: 0 auto;
+	padding: 0;
+	width: 50%;
+	height: 45%;
+	position: relative;
+	display: block;
+	/* background-color: white; */
+}
+
+.box{
+	margin-top: 30%;
+	height: 100%;
+	width: 50%;
+	box-shadow: rgba(0, 0, 0, 0.8) 1px 2px 6px;
+	float: left;
+}
+
+.box-content{
+	margin: 10px auto;
+	padding: 0;
+	width: 100%
+	display: block;
+	position: relative;
+}
+
+/* Formatting */
+
+.box-content h2{
+	margin: 0 auto;
+	margin-top: 30%;
+	padding: 0;
+	color: #FFF;
+	font-family: 'Gloria Hallelujah', cursive;
+	font-weight: 100;
+	text-decoration: underline;
+	text-align: center;
+}
+
+.box-content span p{
+	margin: 10px auto;
+	color: #FFF;
+	text-align: center;
+	font-family: 'cursive';
+	font-size: 18px;
+}
+
+.box-title{
+	margin-left: 10%;
+	padding: 5px;
+	font-size: 24px;
+	text-shadow: rgba(45, 34, 39, 0.8) 1px 1px 2px;
+	color: #53C0EE;
+}
+
+.box-title small{
+	color: #BFBFBF;
+	text-shadow: none;
+	font-weight: none;
+}
+
+.color-1{
+	background:	linear-gradient(to bottom, #53C0EE, #3156AA );
+	background-color: #53C0EE;
+}
+
+.color-2{
+	background-color: #FFF;
+}
+
+input[type=text]{
+	background: url('../img/fa-circle-user.png') no-repeat;
+	background-position: left;
+	background-size: 25px;
+	margin: 30px 10%;
+	padding-left: 10%;
+	height: 40px;
+	width: 70%;
+	display: block;
+	float: left;
+}
+
+input[type=password]{
+	background: url('../img/fa-password.png') no-repeat;
+	background-position: left;
+	background-size: 25px;
+	margin: 0 10%;
+	padding-left: 10%;
+	height: 40px;
+	width: 70%;
+	display: block;
+	float: left;
+}
+
+input[type=text], input[type=password]{
+	border: none;
+	border-bottom: 1px solid #656565;
+}
+
+input[type=text]:focus, input[type=password]:focus, #login:focus{
+	outline: none;
+}
+
+#login{
+	margin: 0 10%;
+	margin-top: 35px;
+	height: 35px;
+	width: 90px;
+	color: #53C0EE;
+	background: linear-gradient(#FFF,#E7E7E7);
+	background-color: #FFF;
+	border-radius: 20px;
+	font-weight: bold;
+	display: block;
+	border: 3px solid #53C0EE;
+	float: left;
+}
+
+#login:hover{
+	box-shadow: rgba(36, 109, 236, 0.8) 1px 1px 4px;
+	background: linear-gradient(to bottom, #FFF,#96B3FF);
+}
+
+#login:focus{
+	box-shadow: rgba(36, 109, 236, 0.8) 1px 1px 4px;
+	background: linear-gradient(to bottom, #96B3FF, #FFF );	
+}
+
+/* Media query */
+
+@media only screen and (min-width:481px) and (max-width: 900px){
+	.login-wrapper{
+		width: 65%;
+	}
+
+	.box.color-1{
+		display: none;
+	}
+
+	.box.color-2{
+		width: 100%;
+	}
+}
+
+@media only screen and (max-width: 480px){
+	.login-wrapper{
+		width: 80%;
+	}
+
+	.box.color-1{
+		display: none;
+	}
+
+	.box.color-2{
+		width: 100%;
+	}
+}
+
